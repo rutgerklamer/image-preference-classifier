@@ -1,7 +1,4 @@
-# image-preference-classifier
- Neural network predicting if you'd like an image using Knn-nearest-neighbours. Also includes a nice little dataset.
-
- # Image preference classifier
+# Image preference classifier
  This web-application learns your image preferences using [tensorflow](https://www.tensorflow.org/js)
  It's predicting if you'd like an image or not using Knn nearest neighbours
 
