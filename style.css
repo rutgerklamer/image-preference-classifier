@@ -9,7 +9,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background: #ecf0f1;
+  background: #e8e8e8;
   padding: 50px;
 }
 
@@ -20,19 +20,20 @@ body {
   top: 0;
   left: 0;
   color: #2c3e50;
-  background: #ecf0f1;
+  background: #e8e8e8;
   line-height: 270px;
   font-size: 32px;;
   transition: opacity 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
-.loading.hidden {
+.hidden {
   opacity: 0;
   pointer-events: none;
 }
 
 canvas {
-  border: 2px dashed #34495e;
+  border-radius: 25px;
+  border: 2px solid #34495e;
   margin: 1px 0 10px;
 }
 
@@ -44,24 +45,55 @@ canvas {
   font-size: 24px;;
 }
 
-.predict {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-}
 
 button {
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  box-shadow: 0 -1px 3px 3px grey;
+  cursor: pointer;
+}
+button.square {
+  position:absolute
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #606060;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+button.square:hover {
+  background: yellow;
+  border-color: red;
+  transition: all 0.4s ease 0s;
 }
 
+button.round {
+    width:80px;
+      height:80px;
+      background-color: #f5f5f5;
+      border-radius:50%;
+      border: 0px solid red;
+      line-height:80px;
+      text-align:center;
+      vertical-align:middle;
+      display:inline-block;
+      font-size: 48px;
+
+      -webkit-box-shadow: 0px 0px 15px 1px grey;
+      -moz-box-shadow:    0px 0px 15px 1px grey;
+      box-shadow:         0px 0px 15px 1px grey;
+}
+
+button.round:hover {
+  -webkit-box-shadow: 0px 0px 15px 1px black;
+  -moz-box-shadow:    0px 0px 15px 1px black;
+  box-shadow:         0px 0px 15px 1px black;
+}
+.good, .bad {
+  transform: translate(0, 10px);
+}
 .save:hover {
     cursor: not-allowed;
 }
 
 .load:hover {
     cursor: not-allowed;
-
 }

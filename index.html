@@ -7,28 +7,32 @@
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <script src="https://kit.fontawesome.com/89cf244b4e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animate.css" />
   </head>
 
   <body>
+
+    </div>
     <main class="app">
       <span class="loading">Preparing model</span>
-
+      <div id="rating" class="hidden">
       <canvas class="canv" width="480" height="480"></canvas>
 
       <div class="actions">
         <span class="info">Train classifier with examples</span>
-        <button class="bad">Bad</button>
-        <button class="new">Get new image</button>
-        <button class="good"><svg xmlns="http://www.w3.org/2000/svg" style="width: 48; height: 48; fill: #94DFE8" width="48" height="48" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg></button>
-
+        <button class="prev round"><i class="fas fa-redo-alt" style="color: #F9C215;"></i></button>
+        <button class="bad round"><i class="fas fa-times" style="color: #FE536A;" ></i></button>
+        <button class="good round"><i class="fas fa-heart" style="color: #39E8B4;" ></i></button>
+        <button class="super round"><i class="fas fa-star" style="color: #25B6FE;" ></i></button>
       </div>
 
-      <button class="predict">Predict</button>
-        <button class="save">Save dataset</button><button class="load">load dataset</button>
-
     </main>
+    <button class="new square">Get new image</button><br>
+    <button class="predict square">Predict</button><br>
+    <button class="save square">Save dataset</button><br>
+    <button class="load square">load dataset</button><br>
 
     <script src="classifier.js"></script>
     <script src="ui.js"></script>

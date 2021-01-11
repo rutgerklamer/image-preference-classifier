@@ -1,9 +1,12 @@
 const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
+changeImage();
 
 const badButton = document.querySelector(".bad");
 const goodButton = document.querySelector(".good");
 const newButton = document.querySelector(".new");
+const superButton = document.querySelector(".super");
+const prevButton = document.querySelector(".prev");
 
 const onDrop = e => {
   e.preventDefault();
@@ -29,7 +32,9 @@ canvas.addEventListener("drop", onDrop, false);
 
 badButton.addEventListener("click", () => addExample("bad"));
 goodButton.addEventListener("click", () => addExample("good"));
+superButton.addEventListener("click", () => addExample("super"));
 newButton.addEventListener("click", () => changeImage());
+prevButton.addEventListener("mouseover", () => changeCursor());
 
 document.querySelector(".predict").addEventListener("click", predict);
 document.querySelector(".save").addEventListener("click", predict);
