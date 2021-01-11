@@ -1,0 +1,67 @@
+body {
+  background: #263238;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #ecf0f1;
+  padding: 50px;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #2c3e50;
+  background: #ecf0f1;
+  line-height: 270px;
+  font-size: 32px;;
+  transition: opacity 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+canvas {
+  border: 2px dashed #34495e;
+  margin: 1px 0 10px;
+}
+
+.info {
+  display: block;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: bold;
+  font-size: 24px;;
+}
+
+.predict {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  box-shadow: 0 -1px 3px 3px grey;
+}
+
+.save:hover {
+    cursor: not-allowed;
+}
+
+.load:hover {
+    cursor: not-allowed;
+
+}
