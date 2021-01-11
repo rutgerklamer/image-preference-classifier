@@ -28,6 +28,8 @@ const addExample = label => {
   }
   const preloadImage = newImage();
   prevChoice = 0;
+  canvas.classList.remove('animate__animated', 'animate__fadeOutUp', 'animate__fadeOutTopLeft', 'animate__fadeOutTopRight');
+
 
   // Definitly improve this design
   if (label == "bad") {
