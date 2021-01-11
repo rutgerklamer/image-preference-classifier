@@ -4,5 +4,7 @@
 
  Lots of stuff to be added. I included a nice 'lil dataset (10,000 image) for you to fool around with, thanks to [these guys](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
- Running this project must happen on a web server, don't have one or too lazy? Use
- [this](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related) chrome extension to easily create a test environment.
+ Running this project must happen on a web server, don't have one or too lazy? Use [this](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related) chrome extension to easily create a test environment.
+
+# Demo
+[Here is a demo](https://rutgerklamer.nl/image-preference-classifier/)
